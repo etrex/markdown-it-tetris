@@ -53,7 +53,7 @@ function tetris_renderer(tokens, idx) {
     }
   }
   output.push('</div>');
-  return output.join("\n");
+  return output.join("");
 };
 
 module.exports = function tetris_plugin(md) {
