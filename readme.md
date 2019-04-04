@@ -8,7 +8,7 @@ npm install markdown-it-tetris
 # Usage
 ```
 var MarkdownIt = require('markdown-it')
-var tetris_plugin = require('./markdown-it-tetris.js')
+var tetris_plugin = require('markdown-it-tetris')
 md = new MarkdownIt().use(tetris_plugin);
 
 var result = md.render(`
