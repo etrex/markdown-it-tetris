@@ -47,7 +47,6 @@ function tetris_renderer(tokens, idx) {
     for(var j = 0 ; j < 10 ; j ++){
       var char = lines[i][j] || ' ';
       char = char == ' ' ? 'empty' : char;
-      char = char.toLowerCase();
       output.push('<span class="tetris-' + char + '"></span>');
     }
     if(i < lines.length - 1){
