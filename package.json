@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-tetris",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "Tetris plugin for markdown-it markdown parser.",
   "keywords": [
     "markdown-it-plugin",
