@@ -1,0 +1,25 @@
+{
+  "name": "markdown-it-tetris",
+  "version": "1.0.1",
+  "description": "Tetris plugin for markdown-it markdown parser.",
+  "keywords": [
+    "markdown-it-plugin",
+    "markdown-it",
+    "markdown",
+    "tetris"
+  ],
+  "homepage": "https://github.com/etrex/markdown-it-tetris",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/etrex/markdown-it-tetris"
+  },
+  "bugs": {
+    "url": "https://github.com/etrex/markdown-it-tetris/issues"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Etrex Kuo"
+}
