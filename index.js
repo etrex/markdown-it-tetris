@@ -14,7 +14,7 @@ function find_next_line_index_with_str(state, startLine, endLine, str){
 }
 
 function tetris_block_ruler(state, startLine, endLine, silent) {
-  if(get_content_of_line(state, startLine) != "tetris{"){
+  if(get_content_of_line(state, startLine).match(/tetris\s*{/) === null){
     return false;
   }
 
