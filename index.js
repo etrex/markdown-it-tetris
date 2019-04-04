@@ -37,8 +37,7 @@ function tetris_renderer(tokens, idx) {
   var content = tokens[idx].content;
   var lines = content.split("\n");
 
-  // remote the last 2 line
-  lines.pop();
+  // remote the last line
   lines.pop();
 
   var output = [];
