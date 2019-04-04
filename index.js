@@ -58,6 +58,6 @@ function tetris_renderer(tokens, idx) {
 };
 
 module.exports = function tetris_plugin(md) {
-  md.block.ruler.before('table', 'tetris', tetris_block_ruler);
+  md.block.ruler.after('code', 'tetris', tetris_block_ruler);
   md.renderer.rules.tetris = tetris_renderer;
 }
