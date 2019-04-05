@@ -26,7 +26,7 @@ function tetris_block_ruler(state, startLine, endLine, silent) {
   state.line = line_of_block_end + 1;
 
   token         = state.push('tetris', '', 0);
-  token.content = state.getLines(startLine + 1, line_of_block_end + 1, 0, true);
+  token.content = state.getLines(startLine + 1, line_of_block_end, 0, false);
   token.map     = [ startLine, state.line ];
 
   return true;
@@ -37,8 +37,9 @@ function tetris_renderer(tokens, idx) {
   var content = tokens[idx].content;
   var lines = content.split("\n");
 
-  // remote the last line
-  lines.pop();
+  while(lines[lines.length-1].trim() === '' || lines[lines.length-1].trim() === '}'){
+    lines.pop();
+  }
 
   var output = [];
   output.push('<div class="tetris">');
@@ -53,7 +54,7 @@ function tetris_renderer(tokens, idx) {
     }
   }
   output.push('</div>');
-  return output.join("");
+  return output.join("\n");
 };
 
 module.exports = function tetris_plugin(md) {
